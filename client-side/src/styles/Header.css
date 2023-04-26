@@ -1,0 +1,8 @@
+header{
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+main p{
+    font-size: 0.75rem;
+    padding: 0 10px;
+}

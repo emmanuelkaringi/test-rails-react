@@ -1,0 +1,2 @@
+class Thaught < ApplicationRecord
+end

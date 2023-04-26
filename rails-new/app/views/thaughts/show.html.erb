@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @thaught %>
+
+<div>
+  <%= link_to "Edit this thaught", edit_thaught_path(@thaught) %> |
+  <%= link_to "Back to thaughts", thaughts_path %>
+
+  <%= button_to "Destroy this thaught", @thaught, method: :delete %>
+</div>

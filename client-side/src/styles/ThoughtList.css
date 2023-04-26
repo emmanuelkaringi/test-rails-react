@@ -1,0 +1,114 @@
+.thoughtlist-h2{
+    text-align: center;
+}
+.thought-list-ul{
+    padding: 0;
+}
+.thought-list-ul li{
+    list-style-type: none;
+    padding: 15px 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 700px;
+    color: black;
+    background-color: rgb(248, 227, 182);
+
+}
+.thought-list-ul li:nth-child(2n){
+    background-color: rgb(182, 248, 248);
+}
+.thought-list-ul li:nth-child(3n){
+    background-color: rgb(248, 182, 234);
+}
+.thought-list-ul li:nth-child(5n){
+    background-color: rgb(180, 228, 141);
+}
+.add-thought-form {
+    background-color: rgb(34, 33, 33);
+    color: rgb(250, 248, 248);
+    padding: 20px;
+    border: 1px solid rgb(36, 35, 35);
+    margin: 5px 10px;
+  }
+  
+  .add-thought-form label {
+    display: block;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .add-thought-form input[type="text"] {
+    border: 1px solid grey;
+    padding: 0;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    max-width: 700px;
+    height: 100px;
+    border-radius: 14px;
+
+  }
+  
+  .add-thought-form button[type="submit"] {
+    background-color: grey;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: auto 40%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    width: 150px;
+  }
+  .answer-thought {
+    background-color: rgb(31, 30, 30);
+    color: rgb(236, 236, 236);
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+  }
+  
+  .answer-thought h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .answer-thought label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .answer-thought input[type="text"] {
+    border: 1px solid white;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .answer-thought button[type="submit"], .back-btn {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    
+  }
+  .answer-thought button[type="submit"]:hover {
+    background-color: rgb(59, 59, 58);
+  }
+  .back-btn{
+    margin: 30px 0 auto 80%;
+  }

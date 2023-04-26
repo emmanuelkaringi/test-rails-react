@@ -1,0 +1,108 @@
+#nav-toggle{
+    appearance: none;
+}
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 1rem;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+    
+  .nav-toggle-label {
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    position: relative;
+    width: 30px;
+  }
+
+  .nav-toggle-label span {
+    background-color: #000000;
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: rotate(0);
+    transition: transform 0.25s ease-in-out;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .nav-toggle-label span:nth-child(1) {
+    top: 0;
+  }
+
+  .nav-toggle-label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nav-toggle-label span:nth-child(3) {
+    bottom: 0;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 5px);
+  }
+
+  #nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -5px);
+  }
+
+ nav ul {
+    background-color: #ffffff;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    padding: 0;
+    top: auto;
+    left: 0;
+    transition: height 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label + ul {
+    height: 100vh;
+    overflow-y: none;
+  }
+
+  li {
+    margin: 0;
+    width: 100%;
+  }
+
+  a {
+    border-bottom: 1px solid #cccccc;
+    display: block;
+    padding: 1rem;
+  }
+}
